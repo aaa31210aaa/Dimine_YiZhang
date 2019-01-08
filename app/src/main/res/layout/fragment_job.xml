@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="tab.Job">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="135dp"-->
+    <!--android:background="@drawable/guanjia_bg">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<com.example.administrator.dimine_yizhang.CircularImage-->
+    <!--android:id="@+id/job_head_photo"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="20px"></com.example.administrator.dimine_yizhang.CircularImage>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/job_sjld"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/job_head_photo"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="上级领导"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/MainText" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/job_leader_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/job_sjld"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="admin"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/MainText" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout style="@style/TitleHeightOrange">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="执法"
+                android:textColor="@color/white"
+                android:textSize="@dimen/MainText" />
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <GridView
+                    android:id="@+id/job_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></GridView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:visibility="gone">-->
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/job_rg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/job_rb1"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/radioy"-->
+        <!--android:button="@null"-->
+        <!--android:checked="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="全部"-->
+        <!--android:textColor="@color/white" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/job_rb2"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/radiof"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:text="已整改"-->
+
+        <!--android:textColor="@color/blue_deep" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/job_rb3"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/radiof"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:text="未整改"-->
+        <!--android:textColor="@color/blue_deep" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/job_rb4"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:background="@drawable/radioright"-->
+        <!--android:button="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:text="整改中"-->
+        <!--android:textColor="@color/blue_deep" />-->
+        <!--</RadioGroup>-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <include layout="@layout/gray_line"></include>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/fragment_job_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/job_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+        </ListView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

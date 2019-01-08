@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:canLoop="true">
+
+    </com.bigkoo.convenientbanner.ConvenientBanner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:layout_marginTop="50px">
+
+        <LinearLayout
+            android:id="@+id/home_qyxx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10px"
+            android:layout_weight="0.4"
+            android:background="@color/yellow_orange"
+            android:orientation="vertical"
+            android:paddingLeft="50px"
+            android:paddingTop="50px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="企业信息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/MainText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="方便的查询"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SubText"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/home_qyxx" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/home_laws"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1"
+                android:background="@color/homeColor2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="50px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="法律法规"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/MainText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="现行有效的法律"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/SubText"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="130px"
+                    android:layout_height="130px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="50px"
+                    android:background="@drawable/home_laws" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/home_report"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10px"
+                    android:layout_weight="1"
+                    android:background="@color/lightbrown"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的报表"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/MainText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="直观详尽"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/home_notification"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/tab_select_color"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通知公告"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/MainText"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="消息内容"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

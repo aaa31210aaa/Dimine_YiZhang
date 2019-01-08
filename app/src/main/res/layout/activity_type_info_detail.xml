@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_qian"
+    android:orientation="vertical"
+    tools:context="job.TypeInfoDetail">
+
+    <RelativeLayout
+        style="@style/TitleHeightOrange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/MainText" />
+
+        <include
+            android:id="@+id/typeinfo_detail_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:id="@+id/typeinfo_detail_zgqk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:text="整改情况"
+            android:textColor="@color/white"
+            android:textSize="@dimen/MainText" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="被检查单位" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_bjcdw"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="地址" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_address"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="法人代表" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_frdb"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="职务" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_zw"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查场所" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_jccs"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查开始时间" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_startdate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查结束时间" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_enddate"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="执法行政机关" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_zfxzjg"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="主办人员" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_zbry"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="主办人员证件号" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_zbryzjh"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="协办人员" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_xbry"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="协办人员证件号" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_xbryzjh"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查描述" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_jcms"
+                    style="@style/SgxqContent"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="是否需要整改" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_sfzg"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="行政处罚分类" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_xzcffl"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/SgxqLL">
+
+                <TextView
+                    style="@style/SgxqTitle"
+                    android:text="检查单位" />
+
+                <TextView
+                    android:id="@+id/typeinfo_detail_jcdw"
+                    style="@style/SgxqContent" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/typeinfo_detail_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="20px">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

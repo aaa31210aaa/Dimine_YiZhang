@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_qian"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="job.AddContent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/add_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="@dimen/MainText" />
+
+        <include
+            android:id="@+id/job_pj_detail_back"
+            layout="@layout/back_image"></include>
+
+        <TextView
+            android:id="@+id/add_content_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginright"
+            android:text="提交"
+            android:textColor="@color/yellow_orange" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray_deep" />
+
+    <EditText
+        android:id="@+id/add_content_etv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="请输入内容详情..."
+        android:padding="10dp"
+        android:text=""
+        android:textColorHint="@color/gray_deep" />
+
+    <include layout="@layout/gray_line"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="添加照片" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <job.MyGridView
+            android:id="@+id/add_content_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"></job.MyGridView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

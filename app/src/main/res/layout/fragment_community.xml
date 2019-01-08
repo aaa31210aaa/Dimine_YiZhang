@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.Community">
+
+
+    <RelativeLayout
+        style="@style/TitleHeightOrange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="议事厅"
+            android:textColor="@color/white"
+            android:textSize="@dimen/MainText" />
+
+        <ImageView
+            android:id="@+id/community_add"
+            style="@style/AddImage"></ImageView>
+    </RelativeLayout>
+
+
+    <!--app:tabMode="scrollable"  自适应滑动-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/community_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="@color/yellow_orange"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/gray_deep">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/community_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/community_tablayout" />
+
+
+</LinearLayout>

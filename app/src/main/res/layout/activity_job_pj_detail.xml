@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_qian"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="job.JobPjDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="满意度评价"
+            android:textSize="@dimen/MainText" />
+
+        <include
+            android:id="@+id/job_pj_detail_back"
+            layout="@layout/back_image"></include>
+
+        <TextView
+            android:id="@+id/job_pj_detail_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginright"
+            android:text="确定"
+            android:textColor="@color/yellow_orange" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="您对这次整改的评价为" />
+
+        <com.example.administrator.dimine_yizhang.StarView
+            android:id="@+id/job_pj_detail_starview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            fresco:mClickImageId="@drawable/service_star_active"
+            fresco:mDefaultImageId="@drawable/service_star_normal"
+            fresco:mImageHeight="30dp"
+            fresco:mImageWidth="30dp"
+            fresco:mMargin="5px"
+            fresco:mStarChoose="1"
+            fresco:mStarNum="5"></com.example.administrator.dimine_yizhang.StarView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/job_pj_detail_pl_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="留下您的宝贵意见，让我们做的更好"
+        android:padding="10dp"
+        android:text=""
+        android:textColorHint="@color/gray_deep"
+        android:textSize="@dimen/SubText" />
+
+
+</LinearLayout>

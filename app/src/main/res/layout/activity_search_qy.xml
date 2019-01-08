@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="job.SearchQy">
+
+
+    <RelativeLayout
+        style="@style/TitleHeightOrange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            style="@style/MyTitleText"
+            android:text="企业查询"
+            />
+
+        <include
+            android:id="@+id/search_qy_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:id="@+id/search_qy_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20px"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130px"
+        android:background="@color/orange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/search_qy_etv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:background="@drawable/searchview_yb"
+            android:completionThreshold="2"
+            android:drawableLeft="@drawable/searchimage"
+            android:hint="@string/HintText"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_deep"
+            android:textSize="@dimen/MainText" />
+
+        <ImageView
+            android:id="@+id/search_qy_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/search_qy_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

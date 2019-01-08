@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/laws_item_lrtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:text=""
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/laws_item_industryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/laws_item_lrtypename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:gravity="center">
+
+            <include layout="@layout/right_arrow"></include>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

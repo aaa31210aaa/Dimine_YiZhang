@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="job.TypeInfoList">
+
+    <RelativeLayout
+        style="@style/TitleHeightOrange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/typeinfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/MainText" />
+
+        <ImageView
+            android:id="@+id/typeinfo_back"
+            style="@style/MyBack"></ImageView>
+
+        <ImageView
+            android:id="@+id/typeinfo_add"
+            style="@style/AddImage"></ImageView>
+
+    </RelativeLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/typeinfo_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/typeinfo_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

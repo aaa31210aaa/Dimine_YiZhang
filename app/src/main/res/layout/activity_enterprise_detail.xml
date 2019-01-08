@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="home.EnterpriseDetail">
+
+    <RelativeLayout style="@style/TitleHeightOrange">
+
+        <include
+            android:id="@+id/enterprise_detail_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MyTitleText"
+            android:text="企业详情" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="企业名称" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_companyname"
+                style="@style/QyXxTv"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="成立时间" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_establishmenttime"
+                style="@style/QyXxTv"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="法定代表" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_legalrepresentative"
+                style="@style/QyXxTv"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="证件代码" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_documentcode"
+                style="@style/QyXxTv"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="经济类型" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_economictype"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="行业领域" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_majorindustryareas"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="主管部门" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_competentdepartment"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="员工人数" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_numberofemployees"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="注册资金" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_registeredcapital"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="企业地址" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_enterpriseaddress"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="风险级别" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_risklevel"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/MatchWrap">
+
+            <TextView
+                style="@style/QyXxTv"
+                android:text="企业评分" />
+
+            <TextView
+                android:id="@+id/enterprise_detail_score"
+                style="@style/QyXxTv"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enterprise_detail_map_btn"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:background="@drawable/btn_click"
+        android:text="查看地图"
+        android:textColor="@color/white" />
+
+</LinearLayout>
+

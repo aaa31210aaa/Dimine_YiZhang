@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">安全执法</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="click_agin">再按一次退出应用</string>
+    <string name="network_connection_failed">请检查网络...</string>
+    <string name="loading_write">请稍后...</string>
+    <string name="NotEmpty">账号或者密码不能为空</string>
+    <string name="login_success">登陆成功</string>
+    <string name="mine_cancellation_dialog_title">注销</string>
+    <string name="mine_cancellation_dialog_content">请问是否要注销此账号</string>
+    <string name="mine_cancellation_dialog_btn1">取消</string>
+    <string name="mine_cancellation_dialog_btn2">确定</string>
+    <string name="network_error">连接失败</string>
+    <string name="loading">加载中...</string>
+    <string name="refreshed">刷新完成</string>
+    <string name="netcantuse">网络不可用</string>
+    <string name="HintText">请输入关键词...</string>
+    <string name="CameraErr">拍照失败，需要开启相机权限</string>
+
+</resources>

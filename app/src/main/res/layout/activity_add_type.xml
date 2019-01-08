@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_qian"
+    android:orientation="vertical"
+    tools:context="job.AddType">
+
+    <RelativeLayout
+        style="@style/TitleHeightOrange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/add_type_name"
+            style="@style/MyTitleText"
+            android:text="新增" />
+
+        <include
+            android:id="@+id/add_type_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            android:id="@+id/add_type_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="20px"
+            android:text="提交"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="被检查单位" />
+
+                <TextView
+                    android:id="@+id/add_type_bjcdw"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写被检查单位名称" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="地址" />
+
+                <EditText
+                    android:id="@+id/add_type_address"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写地址" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="法人代表" />
+
+                <EditText
+                    android:id="@+id/add_type_frdb"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写法人代表" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="职务" />
+
+                <EditText
+                    android:id="@+id/add_type_zw"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写职务" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="检查场所" />
+
+                <EditText
+                    android:id="@+id/add_type_jccs"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写检查场所" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="检查开始时间" />
+
+                <TextView
+                    android:id="@+id/add_type_startdate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:drawableRight="@drawable/mdate"
+                    android:gravity="center"
+                    android:paddingLeft="10px"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="检查结束时间" />
+
+                <TextView
+                    android:id="@+id/add_type_enddate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:drawableRight="@drawable/mdate"
+                    android:gravity="center"
+                    android:paddingLeft="10px"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="执法行政机关" />
+
+                <EditText
+                    android:id="@+id/add_type_zfxzjg"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写执法行政机关" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="主办人员" />
+
+                <EditText
+                    android:id="@+id/add_type_zbry"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写主办人员" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="主办人员证件号" />
+
+                <EditText
+                    android:id="@+id/add_type_zbryzjh"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写主办人员证件号" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="协办人员" />
+
+                <EditText
+                    android:id="@+id/add_type_xbry"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写协办人员" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="协办人员证件号" />
+
+                <EditText
+                    android:id="@+id/add_type_xbryzjh"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写协办人员证件号" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="是否需要整改" />
+
+                <RadioGroup
+                    android:id="@+id/add_type_radiogroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/add_type_zgyes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+
+                    <RadioButton
+                        android:id="@+id/add_type_zgno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="行政处罚分类" />
+
+                <RadioGroup
+                    android:id="@+id/add_type_radiogroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/add_type_ybcx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一般程序" />
+
+                    <RadioButton
+                        android:id="@+id/add_type_jycx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="简易程序" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="检查单位名称" />
+
+                <EditText
+                    android:id="@+id/add_type_jcdw"
+                    style="@style/AddTypeEditText"
+                    android:hint="请填写检查单位名称" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AddTypeTextView"
+                    android:text="检查描述" />
+
+                <EditText
+                    android:id="@+id/add_type_jcms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/editext_yb"
+                    android:gravity="top|left"
+                    android:hint="请填写检查描述..."
+                    android:minHeight="200px"
+                    android:padding="10px"
+                    android:text=""
+                    android:textColorHint="@color/gray_deep"
+                    android:textSize="@dimen/MainText" />
+            </LinearLayout>
+
+            <job.MyGridView
+                android:id="@+id/job_add_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="@dimen/space_size"
+                android:verticalSpacing="@dimen/space_size"></job.MyGridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

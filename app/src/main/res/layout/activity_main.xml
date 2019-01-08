@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.dimine_yizhang.MainActivity">
+
+    <com.example.administrator.dimine_yizhang.NoScrollViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:isScrollContainer="true"></com.example.administrator.dimine_yizhang.NoScrollViewPager>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_deep" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_tablayout"
+        style="@style/MyCustomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"></android.support.design.widget.TabLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.example.administrator.dimine_yizhang.ViewPagerCompat-->
+    <!--android:id="@+id/viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.7"-->
+    <!--android:duplicateParentState="true">-->
+
+    <!--</com.example.administrator.dimine_yizhang.ViewPagerCompat>-->
+
+
+    <!--<include layout="@layout/gray_line"></include>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/main_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100px"-->
+    <!--android:background="@color/white">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_home"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_home"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/tab_home_btn" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="首页"-->
+    <!--android:textColor="@drawable/text_color_select"-->
+    <!--android:textSize="@dimen/size4" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_job"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_job"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/tab_job_btn" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="执法"-->
+    <!--android:textColor="@drawable/text_color_select"-->
+    <!--android:textSize="@dimen/size4" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_community"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_plan"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/tab_community_btn" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="议事厅"-->
+    <!--android:textColor="@drawable/text_color_select"-->
+    <!--android:textSize="@dimen/size4" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_mine"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_mine"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:background="@drawable/tab_mine_btn" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="我的"-->
+    <!--android:textColor="@drawable/text_color_select"-->
+    <!--android:textSize="@dimen/size4" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

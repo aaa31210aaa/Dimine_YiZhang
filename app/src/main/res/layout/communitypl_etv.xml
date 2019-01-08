@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/communitypl_body"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:background="@color/gray_qian"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/communitypl_etv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:background="@drawable/editext_yb"
+        android:hint="说点什么..."
+        android:padding="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/communitypl_send"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/modify_password_btn"
+        android:text="发送" />
+
+</LinearLayout>

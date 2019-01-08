@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="login_btn_enable">#CD853F</color>
+    <color name="login_btn_cantenable">#FFEC8B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tab_select_color">#56ABE4</color>
+    <color name="text_select_color">#56ABE4</color>
+    <color name="text_unselect_color">#A9B7B7</color>
+    <color name="gray_deep">#cccccc</color>
+    <color name="blue_deep">#1C86EE</color>
+    <color name="gs">#1C56EE</color>
+    <color name="gray_qian">#F3F3F3</color>
+    <color name="orange">#FF8247</color>
+    <color name="yellow_orange">#FFC125</color>
+    <color name="green">#4EEE94</color>
+    <color name="homeColor2">#71C671</color>
+    <color name="lightbrown">#CC9966</color>
+    <color name="sh">#666666</color>
+    <color name="dfs">#CC9999</color>
+    <color name="ql">#CCCC99</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="yhzs">#6495ED</color>
+    <color name="yhywc">#EEB422</color>
+    <color name="yhwwc">#EE2C2C</color>
+    <color name="photopicker_background">#181819</color>
+    <color name="my_transparence">#00000000</color>
+    <color name="tabtv_unselect">#a9b7b7</color>
+    <color name="fulltext">#8290AF</color>
+    <color name="transparent">#00000000</color>
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+
+</resources>

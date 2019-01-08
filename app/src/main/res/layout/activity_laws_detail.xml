@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="home.LawsDetail">
+
+    <RelativeLayout style="@style/TitleHeightOrange">
+
+        <include
+            android:id="@+id/laws_detail_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MyTitleText"
+            android:text="法律法规详情" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/laws_detail_lrtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="@dimen/SubTitleSize" />
+
+            <TextView
+                android:id="@+id/laws_detail_industryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:id="@+id/laws_detail_lrtypename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:id="@+id/laws_detail_docnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:id="@+id/laws_detail_bbdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:id="@+id/laws_detail_effdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:id="@+id/laws_detail_lrdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text=""
+                android:textSize="@dimen/MainText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

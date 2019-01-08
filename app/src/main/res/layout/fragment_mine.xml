@@ -1,0 +1,304 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="tab.Mine">
+
+    <!--<com.ecloud.pulltozoomview.PullToZoomScrollViewEx-->
+    <!--android:id="@+id/mine_scrollview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none">-->
+
+    <!--</com.ecloud.pulltozoomview.PullToZoomScrollViewEx>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/guanjia_bg"
+            android:gravity="center">
+
+            <com.example.administrator.dimine_yizhang.CircularImage
+                android:id="@+id/mine_head_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"></com.example.administrator.dimine_yizhang.CircularImage>
+
+            <TextView
+                android:id="@+id/mine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_head_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="66666"
+                android:textColor="@color/white"
+                android:textSize="@dimen/MainText" />
+
+            <TextView
+                android:id="@+id/mine_sf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/SubText" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/mine_identity"
+                            android:layout_gravity="center_horizontal"
+                            android:text="身份" />
+
+                        <TextView
+                            android:id="@+id/mine_identity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="待审核"
+                            android:textColor="@color/orange" />
+                    </LinearLayout>
+
+                    <include layout="@layout/gray_h_line"></include>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/mine_identity"
+                            android:layout_gravity="center_horizontal"
+                            android:text="下级人数" />
+
+                        <TextView
+                            android:id="@+id/mine_xj_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/orange" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_duty"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="我的职责" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="意见反馈" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_publish_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="我发表的话题" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_partake_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="我参与的话题" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_favor_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="我关注的话题" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:id="@+id/mine_notification_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="消息通知" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <include layout="@layout/gray_line"></include>
+
+                <cn.bingoogolapple.badgeview.BGABadgeRelativeLayout
+                    android:id="@+id/mine_modify_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:background="@drawable/rl_click">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50px"
+                        android:gravity="center"
+                        android:text="修改密码" />
+
+                    <include layout="@layout/right_arrow"></include>
+
+                </cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>
+
+                <!--<include layout="@layout/gray_line"></include>-->
+
+                <!--<cn.bingoogolapple.badgeview.BGABadgeRelativeLayout-->
+                <!--android:id="@+id/mine_pyq"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150px"-->
+                <!--android:background="@drawable/rl_click">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="50px"-->
+                <!--android:gravity="center"-->
+                <!--android:text="测试" />-->
+
+                <!--<include layout="@layout/right_arrow"></include>-->
+
+                <!--</cn.bingoogolapple.badgeview.BGABadgeRelativeLayout>-->
+
+                <include layout="@layout/gray_line"></include>
+
+                <RelativeLayout
+                    android:id="@+id/mine_cancellation"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_click"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="注销"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

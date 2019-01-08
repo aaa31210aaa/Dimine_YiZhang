@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="home.Enterprise">
+
+    <RelativeLayout style="@style/TitleHeightOrange">
+
+        <include
+            android:id="@+id/enterprise_back"
+            layout="@layout/back_base"></include>
+
+        <TextView
+            style="@style/MyTitleText"
+            android:text="企业信息" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130px"
+        android:background="@color/orange"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/enterprise_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:background="@drawable/searchview_yb"
+            android:completionThreshold="2"
+            android:drawableLeft="@drawable/searchimage"
+            android:hint="@string/HintText"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_deep"
+            android:textSize="@dimen/MainText" />
+
+        <ImageView
+            android:id="@+id/enterprise_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/clear"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/enterprise_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/enterprise_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></ListView>
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/enterprise_nodatarefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="30px"
+                    android:background="@drawable/nodata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无数据" />
+
+            </LinearLayout>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

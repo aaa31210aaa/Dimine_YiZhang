@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    tools:context="com.example.administrator.dimine_yizhang.WelCome">
+
+    <ImageView
+        android:id="@+id/welcome_icon"
+        android:layout_width="280px"
+        android:layout_height="280px"
+        android:layout_marginTop="120px"
+        android:background="@drawable/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:text="宜章县安全生产执法管理系统"
+        android:textColor="@color/yellow_orange"
+        android:textSize="@dimen/TitleSize"/>
+
+
+
+</LinearLayout>
